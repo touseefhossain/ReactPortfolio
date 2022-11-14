@@ -1,0 +1,181 @@
+.profile-page{
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .logo-container{
+        width: 15%;
+        height: 30%;
+        translate: 270% 10%;
+        rotate: 30deg;
+        opacity: 0.4;
+        animation: rollIn 4s;
+    }
+
+    .title{
+        position: fixed;
+        width: 21%;
+        left: 16%;
+        top: 10%;
+        text-align: left;
+        .title-text{
+            font-size: 40px;
+            font-family: 'Lucida Console';
+            color: aliceblue;
+            /* Source code derived from
+            https://css-tricks.com/snippets/css/typewriter-effect/ */
+            overflow: hidden;
+            border-right: .15em solid olivedrab;
+            white-space: nowrap;
+            letter-spacing: .05em;
+            margin: 0 auto;
+            animation: typing 3s steps(20, end), blink-caret .75s step-end infinite;
+        }
+    }
+
+    .profile-stats{
+        position: fixed;
+        text-align: left;
+        left: 18%;
+        top: 20%;
+        padding: 10px 30px;
+        border: 2px solid olivedrab;
+        p{
+            opacity: 0;
+            animation: fadeInDown 2s 3s forwards;
+        }
+    }
+
+    .text-zone1{
+        position: fixed;
+        width: 40%;
+        left: 18%;
+        top: 50%;
+        opacity: 0;
+        animation: fadeIn 2s 5s forwards;
+    }
+
+    .text-zone2{
+        position: fixed;
+        width: 40%;
+        left: 56%;
+        top: 90%;
+        opacity: 0;
+        animation: fadeIn 2s 6s forwards;
+    }
+
+    .text-zone3{
+        position: fixed;
+        width: 40%;
+        left: 18%;
+        top: 140%;
+        opacity: 0;
+        animation: fadeIn 2s 7s forwards;
+        p:nth-child(4){
+            margin-bottom: 60px;
+        }
+    }
+
+    p{
+        font-family: 'Swansea';
+        font-size: 16px;
+        color: aliceblue;
+        text-align: left;
+    }
+    b{
+        color: olivedrab;
+        margin: 0;
+    }
+    .heading{
+        font-size: 20px;
+    }
+
+    .profile-pic{
+        position: fixed;
+        width: 35%;
+        height: 65%;
+        left: 60%;
+        top: 7%;
+        border-radius: 50%;
+        border: 4px solid olivedrab;
+        animation: fadeIn 2s 3s backwards;
+    }
+
+    .swc-pic{
+        position: fixed;
+        width: 15%;
+        height: 25%;
+        left: 20%;
+        top: 95%;
+        opacity: 0;
+        animation: fadeInLeft 2s 6s forwards;
+    }
+
+    .ib-pic{
+        position: fixed;
+        width: 15%;
+        height: 25%;
+        left: 35%;
+        top: 95%;
+        opacity: 0;
+        animation: fadeInLeft 2s 6.3s forwards;
+    }
+
+    .uofc-pic{
+        position: fixed;
+        width: 25%;
+        height: 13%;
+        left: 23%;
+        top: 122%;
+        border-radius: 20px;
+        opacity: 0;
+        animation: fadeInLeft 2s 6.6s forwards;
+    }
+
+    .boxing-pic{
+        position: fixed;
+        width: 25%;
+        height: 250px;
+        left: 62%;
+        top: 150%;
+        border-radius: 20px;
+        border: 4px solid olivedrab;
+        opacity: 0;
+        animation: fadeInRight 2s 7s forwards;
+    }
+
+    .program-pic{
+        position: fixed;
+        width: 25%;
+        height: 250px;
+        left: 72%;
+        top: 190%;
+        border-radius: 20px;
+        border: 4px solid olivedrab;
+        opacity: 0;
+        animation: fadeInRight 2s 7.3s forwards;
+    }
+
+    @keyframes typing {
+        from {width: 0;}
+        to {width: 100%;}
+    }
+    @keyframes blink-caret {
+        from, to {border-color: transparent;}
+        50% {border-color: olivedrab;}
+    }
+    /*rollIn animation code retrieved from 
+    https://www.tutorialspoint.com/css/css_animation_roll_in.htm*/
+    @keyframes rollIn{
+        0%{
+            opacity: 0;
+            transform: translateX(-100%) translateY(40%) rotate(-120deg);
+        }
+        100%{
+            opacity: 0.4;
+            transform: translateX(0px) translateY(0px) rotate(0deg);
+        }
+    }
+}

@@ -1,0 +1,133 @@
+.home-page{
+    height: 100%;
+    width: 100%;
+    
+    .text-zone{
+        position: absolute;
+        left: 10%;
+        top: 45%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+    }
+    h1{
+        margin: 0;
+        text-align: left;
+    }
+    .title-text{
+        font-size: 40px;
+        font-family: 'Lucida Console';
+        /* Source code derived from
+        https://css-tricks.com/snippets/css/typewriter-effect/ */
+        overflow: hidden;
+        border-right: .15em solid olivedrab;
+        white-space: nowrap;
+        letter-spacing: .01em;
+        margin: 0 auto;
+        animation: typing 3s steps(22, end), blink-caret .75s step-end infinite;
+    }
+    @keyframes typing {
+        from {width: 0;}
+        to {width: 100%;}
+    }
+    @keyframes blink-caret {
+        from, to {border-color: transparent;}
+        50% {border-color: olivedrab;}
+    }
+    .boxed{
+        margin-top: 16px;
+        width: 60%;
+        h1, h2{
+            font-family: 'Swansea';
+            animation: bounceIn 1s 4s backwards;
+        }
+        .profile-button{
+            text-decoration: none;
+        }
+        /*animation code retrieved from*/
+        /*https://stackoverflow.com/questions/28365839/dashed-border-animation-in-css3-animation*/
+        background-image: linear-gradient(90deg, olivedrab 50%, transparent 50%), 
+        linear-gradient(90deg, olivedrab 50%, transparent 50%), 
+        linear-gradient(0deg, olivedrab 50%, transparent 50%), 
+        linear-gradient(0deg, olivedrab 50%, transparent 50%);
+        background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+        background-size: 30px 4px, 30px 4px, 4px 30px, 4px 30px;
+        background-position: left top, right bottom, left bottom, right   top;
+        animation: border-dance 0.4s 5s infinite linear;
+        padding: 20px 20px 30px;
+        @keyframes border-dance {
+            0% {
+              background-position: left top, right bottom, left bottom, right   top;
+            }
+            100% {
+              background-position: left 30px top, right 30px bottom , left bottom 30px , 
+              right   top 30px;
+            }
+          }
+        &:hover{
+            transform: scale(1.02);
+        }
+    }
+    h2{
+        font-size: 28px;
+        margin: 0;
+        text-align: left;
+        font-weight: 400;
+        letter-spacing: 2px;
+        color: aliceblue;
+    }
+    .highlighted-text{
+        font-size: 52px;
+        font-family: 'Swansea';
+        color: olivedrab;
+    }
+    .contact-button{
+        margin-top: 30px;
+        width: 40%;
+        text-align: left;
+        .flat-button{
+            color: olivedrab;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: 'Swansea';
+            text-decoration: none;
+            position: relative;
+            border: 1px solid olivedrab;
+            padding: 10px;
+            letter-spacing: 2px;
+            animation: fadeIn 1s 6s backwards;
+            transition: all 0.5s ease-out;
+            &:hover{
+                background-color: olivedrab;
+                color: aliceblue;
+            }
+        }
+    }
+    h3{
+        margin-top: 10px;
+        font-family: 'Comic Sans MS';
+        font-size: 10px;
+        font-weight: 300;
+        animation: fadeIn 2s 8s backwards;
+    }
+    .logo-container{
+        width: 40%;
+        height: 85%;
+        translate: 80% 35%;
+        rotate: 30deg;
+        animation: rollIn 4s forwards;
+        opacity: 1;
+    }
+}
+/*rollIn animation code retrieved from 
+https://www.tutorialspoint.com/css/css_animation_roll_in.htm*/
+@keyframes rollIn{
+        0%{
+            opacity: 0;
+            transform: translateX(-100%) translateY(40%) rotate(-120deg);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0px) translateY(0px) rotate(0deg);
+        }
+}
