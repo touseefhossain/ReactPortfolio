@@ -4,6 +4,7 @@ import DataProj01 from '../../assets/images/Data_project_01.png'
 import DataProj02 from '../../assets/images/Data_project_02.png'
 import Froggy01 from '../../assets/images/Froggy_01.png'
 import RunningToast01 from '../../assets/images/running_toast_01.png'
+import WatchList01 from '../../assets/images/WatchList_01.png'
 import { NavLink } from 'react-router-dom'
 
 const Projects = () =>{
@@ -160,8 +161,7 @@ const Projects = () =>{
                         RunningToast is a straightforward game where the player needs to jump over 
                         obstacles in order to gain points. The sprites and animations were crafted 
                         by yours truly (made sprite sheets on Piskel), and the game includes multiple 
-                        phase screens and background music (from some of my favourite medium). click 
-                        the link under the screenshot to play the game.
+                        phase screens and background music (from some of my favourite medium). 
                     </p>
                     <div className= 'single-image'>
                         <img className = 'running-toast-01' src = {RunningToast01}/>
@@ -173,6 +173,44 @@ const Projects = () =>{
                         my studies, which made me feel proud that I was able to apply theory into an 
                         actual software application. The source code can be found and downloaded 
                         from my GitHub account, so feel free to take a look there. <br/>
+                    </p>
+                </div>
+                <div className= 'content watchlist'>
+                    <h3>WatchList</h3>
+                    <h4><i>WinForms Desktop App</i></h4>
+                    <p>
+                        Through some unforeseen circumstances, I had to reset my laptop to its factory 
+                        settings. I tried to retain and save as many personal files as I can remember, 
+                        but there were some that are regretably lost forever. One of the files was a 
+                        notebook text file containing all the TV shows I have watched along with 
+                        information of seasons/episodes of shows I'm currently watching. Instead of 
+                        creating a new text file, I thought that maybe I can program something a little 
+                        nicer to display this 'watchlist' of mine. I have not created any project that 
+                        uses a database yet, so I thought this project would be a good way to exercise 
+                        the querying theory I've learned in class. To minimize the overlap with my 
+                        studies, I decided to learn and utilize the C#.NET framework to create a 
+                        WinForms app with a MS SQL Server database connected to it. <br/> <br/>
+                        This app separates my 'watchlist' text file into 4 separate categories: 
+                        watching, curious, waiting, and finished (denoted as 'WatchList', 'Curiosity 
+                        Centre', 'Shrine of Patience', and 'Hall of Fame' respectively). This way, it 
+                        will be easier to view the status of the shows I have interest in. I also 
+                        implemented a search function that will come to be useful once the database is 
+                        filled with many entries (soon to happen). 
+                    </p>
+                    <div className= 'single-image'>
+                        <img className = 'watchlist-01' src = {WatchList01}/>
+                    </div>
+                    <p>
+                        The concept of replacing a text file with something more manageable is 
+                        simple in theory, but I did come across a few obstacles when creating this 
+                        app. This may not come off as a surprise since this was my first time using 
+                        the .NET framework along with using C# and SQL Server. I found that making 
+                        unique and vibrant UI designs is much harder and limited in the WinForms 
+                        platform. There were some minor shortcuts I had to take in order to produce 
+                        this first iteration of the app, but I am proud of what I was able to do in 
+                        order to restore a lost file of mine. When I have the time, I would love to 
+                        come back to this app and optimize it. Have a look at my GitHub to see the 
+                        source code for this project. <br/>
                     </p>
                 </div>
                 <div className= 'content portfolio'>
